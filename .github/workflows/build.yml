@@ -22,6 +22,7 @@ jobs:
       matrix:
         os-version:
           [
+            "debian:buster",
             "debian:bullseye",
             "debian:bookworm",
             "ubuntu:noble",
@@ -78,7 +79,7 @@ jobs:
                 cat /etc/apt/sources.list  /etc/apt/sources.list.d/ubuntu-arm.list
               fi
             fi
-            if [ "$os_version" = "debian:bullseye" ]; then
+            if [ "$os_version" = "debian:bullseye" ] || [ "$os_version" = "debian:buster" ]; then
               # update autoconf
               apt update
               apt install wget -y
@@ -134,6 +135,7 @@ jobs:
             amd64
             arm64
           repo_supported_version: |
+            buster
             bullseye
             bookworm
             noble
