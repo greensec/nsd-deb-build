@@ -1,0 +1,26 @@
+Codename: bullseye
+Date: Mon, 07 Jul 2025 22:48:10 UTC
+Architectures: amd64 arm64
+Components: main
+Description: greensec/nsd-deb-build
+MD5Sum:
+ a0e9751f299ec11a2770d338efd7d6ff 982 main/binary-amd64/Packages
+ bc54335ecdbf0d74f14ddd3f70ea78a1 644 main/binary-amd64/Packages.gz
+ 5396bbb52ecf772f658bebc97c266716 72 main/binary-amd64/Release
+ b17051b01d733934c7cf58ccc080cff6 982 main/binary-arm64/Packages
+ ce53e9f99ca307301f0382793098dde2 644 main/binary-arm64/Packages.gz
+ 19729a2589f796eaec918f32c2347c64 72 main/binary-arm64/Release
+SHA1:
+ 65e113459b7b04a1a662d1f7e36e9a07b68c3c61 982 main/binary-amd64/Packages
+ 2ce178695ae7902f555da38d1820952f2900c5f9 644 main/binary-amd64/Packages.gz
+ 8ad61939e68bf76c941114f968288950247afe4f 72 main/binary-amd64/Release
+ 3d5297bb0c41caaa41ee70a8bb8de0bda59764fe 982 main/binary-arm64/Packages
+ c053d69eff3e597a6fe9815181eac994e7738a76 644 main/binary-arm64/Packages.gz
+ 2bf993a2d202a49d3ff18a33ce648d5fecebb8d9 72 main/binary-arm64/Release
+SHA256:
+ 2d4ede16b2cee6add1d0901badbbf5c884c55079b4055e009661409fc00ce823 982 main/binary-amd64/Packages
+ 9032c4fb3f6e0ed345fd18ba2a1e90c4552d2a61a1b5f98beec4926603427032 644 main/binary-amd64/Packages.gz
+ 64666b7299f5ab54c91732e1106aa5bb40277f4a01cb522c9cdfbe3f0e0a54c1 72 main/binary-amd64/Release
+ 152ba040fe0637cc674a95019d0e9f931a0912251c91a1f22af5e9602ab80eca 982 main/binary-arm64/Packages
+ 6d661cc99365b4a4b0888f4fc2ea53ba5430f2c91802aa14b6b29958e07ddd13 644 main/binary-arm64/Packages.gz
+ e07acd76f3350237263c014d1730e4f45d336f6229acb7283624783c9b996dcd 72 main/binary-arm64/Release

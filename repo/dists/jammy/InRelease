@@ -1,0 +1,45 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Codename: jammy
+Date: Mon, 07 Jul 2025 22:48:11 UTC
+Architectures: amd64 arm64
+Components: main
+Description: greensec/nsd-deb-build
+MD5Sum:
+ 150e62db0d50ab8a896ce28cc5ca1bf7 982 main/binary-amd64/Packages
+ 1f8f3e9a66f8623ba62e272f68cbbe44 651 main/binary-amd64/Packages.gz
+ 5396bbb52ecf772f658bebc97c266716 72 main/binary-amd64/Release
+ d865d01fab5d4ad51af646dba6736180 982 main/binary-arm64/Packages
+ f52dd5e982ace922749e693a32681fc6 647 main/binary-arm64/Packages.gz
+ 19729a2589f796eaec918f32c2347c64 72 main/binary-arm64/Release
+SHA1:
+ 0c4f3ff679f683757792094c37b02d73a166dde9 982 main/binary-amd64/Packages
+ d0931eb3ff6bb1f45de59077d99d3e37aa31aa07 651 main/binary-amd64/Packages.gz
+ 8ad61939e68bf76c941114f968288950247afe4f 72 main/binary-amd64/Release
+ d6b7f07831665e60c66d31583ff297eafa3a94bd 982 main/binary-arm64/Packages
+ 48b28d1578c4e8fea15ff6f0acc5d646d53c6b22 647 main/binary-arm64/Packages.gz
+ 2bf993a2d202a49d3ff18a33ce648d5fecebb8d9 72 main/binary-arm64/Release
+SHA256:
+ 03b15e48d8b29f289c80954b995c8d1ba5a0f01e1afa48820961b6faa6858722 982 main/binary-amd64/Packages
+ 5002e1586a95856a36bf9fba2603429ae855641b5a5d74b0eeff9058c6f8e15e 651 main/binary-amd64/Packages.gz
+ 64666b7299f5ab54c91732e1106aa5bb40277f4a01cb522c9cdfbe3f0e0a54c1 72 main/binary-amd64/Release
+ 74da220b8866a7ad92fef7489c74f6c848f397f4b8ec21a9103a4444aac52fed 982 main/binary-arm64/Packages
+ 2e19ddae11eeb96040f2cb5672c167238b791ddfafa2aee2a719a8b833d42b41 647 main/binary-arm64/Packages.gz
+ e07acd76f3350237263c014d1730e4f45d336f6229acb7283624783c9b996dcd 72 main/binary-arm64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEh9MiQaRrLJmxKB6AvrUP1Du1TQcFAmhsTqsACgkQvrUP1Du1
+TQej7Q/9FDhFF2xf4wflsJZOVv/+wh9r4s/VF93VfqqIeLNC1K0gEDEE2YyKltLl
+XRIGQefmArdH6F0dhaMNbGwYyTJU3/A9biqLrlbnUS0VVn3M8KfEnro38cVXukNj
+DE1Qt+T5wv3l6qmYlMO4mx2Ljm7WMa8nQJg5xtBDU+SPQ9a1QXNPEwxDkPKDKBYV
+9hYKMgsHSviWqG3JMcy0o4zOL4JDdW9hZMF9eBXvhGnpN1hQfU6ARPfeKJLV0nwl
+OLIdB8zHkD9mQxRkRTqV74a/ma7idjvDjUU2Vj5+ZuOCpIgK+JJOZzJwZv7dFa5g
+WaR+fDz0v4clnVQQ6ztgtVYm8K+KrOPsYdXHGGf3bSUmJ1loc6SkT3kSExuPfWPG
+TEA/59k/YgGUzTdDLVkyhW2XkzDHLJl39K5JrYE1A7sJf4hgSi5q43e5LTE+nQRK
+AMts+ffDhFSIGPJbAU8oc2X0pCuJoIPNFcVjGgz6LI6nHSwBZwWb5GnAQSiJ9Pkw
+c4K3E59M+YIO+C/anZ9GpdmLY7URZ7ie77NsMugDBXFrp5CZPZptyXbXmIlv0nJF
+G2UJxbErh8IAyZ2poM+JxKbQnPiwsGBR8ltjbEOUav02uJxzWlOYhSBdpcdeVwiC
+BWUdtZC0hTbKeh2BI4qF+ktFTi5+5Nksc+G1iEObeo8YyYES+Jo=
+=qE83
+-----END PGP SIGNATURE-----

@@ -1,0 +1,26 @@
+Codename: noble
+Date: Mon, 07 Jul 2025 22:48:11 UTC
+Architectures: amd64 arm64
+Components: main
+Description: greensec/nsd-deb-build
+MD5Sum:
+ ec35a1cefb89a419a89c00cd7633e690 980 main/binary-amd64/Packages
+ b07bfaf7f27ebd56ac0d12a2e93b40e2 641 main/binary-amd64/Packages.gz
+ 5396bbb52ecf772f658bebc97c266716 72 main/binary-amd64/Release
+ a9da8607f40caa079f45e0adefec9382 980 main/binary-arm64/Packages
+ fa5d0ae047dd3e8419dbd1f063ca491b 641 main/binary-arm64/Packages.gz
+ 19729a2589f796eaec918f32c2347c64 72 main/binary-arm64/Release
+SHA1:
+ 1465be2c36d20de0dadf514013e7c6080c850ec1 980 main/binary-amd64/Packages
+ 2d9e3edb3fedc262e9fa6afd95a4eb4968151299 641 main/binary-amd64/Packages.gz
+ 8ad61939e68bf76c941114f968288950247afe4f 72 main/binary-amd64/Release
+ 0be8e501b0798901b5ee081bb2f941cf091af197 980 main/binary-arm64/Packages
+ 644108cc1e9cbb491bba9d021f00ac05590302ae 641 main/binary-arm64/Packages.gz
+ 2bf993a2d202a49d3ff18a33ce648d5fecebb8d9 72 main/binary-arm64/Release
+SHA256:
+ 5de321078fb3e65daa393f3c9d564a177e6075e9cf2b107d20931c94c8fa396a 980 main/binary-amd64/Packages
+ 9037525ac40ea73a097ca2c8e85557678e3286e9e6ac60df4afbff1149b29256 641 main/binary-amd64/Packages.gz
+ 64666b7299f5ab54c91732e1106aa5bb40277f4a01cb522c9cdfbe3f0e0a54c1 72 main/binary-amd64/Release
+ 7f271d26954213525828b922e146cdacb327890bc6c6d642442e374bf736c812 980 main/binary-arm64/Packages
+ 61df8879761f65d756b6fee0bd1d837cb1a7ae46d54a5e0f891f87010b77d2b1 641 main/binary-arm64/Packages.gz
+ e07acd76f3350237263c014d1730e4f45d336f6229acb7283624783c9b996dcd 72 main/binary-arm64/Release
