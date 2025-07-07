@@ -12,7 +12,6 @@ Pre-built packages are available at: https://greensec.github.io/nsd-deb-build/
 - buster (10)
 - bullseye (11)
 - bookworm (12)
-- sid (unstable)
 
 ### Ubuntu
 - jammy (22.04 LTS)
