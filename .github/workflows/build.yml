@@ -79,7 +79,7 @@ jobs:
               fi
             fi
 
-            cp debian nsd/
+            cp -r debian nsd/
           extra-build-deps: devscripts git dpkg-cross
           before-build-hook: "dch --local ~${{ env.version }} 'GitHub build for ${{ matrix.os-version }}'"
           buildpackage-opts: --build=binary --no-sign -d
