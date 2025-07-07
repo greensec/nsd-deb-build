@@ -79,11 +79,11 @@ jobs:
               fi
             fi
 
-            cp -r debian nsd/
+            cp -vr /github/workspace/debian /github/workspace/nsd/
           extra-build-deps: devscripts git dpkg-cross
           before-build-hook: "dch --local ~${{ env.version }} 'GitHub build for ${{ matrix.os-version }}'"
           buildpackage-opts: --build=binary --no-sign -d
-          source-dir: nsd
+          source-dir: nsd/
       - name: Upload deb files
         uses: actions/upload-artifact@v4
         with:
