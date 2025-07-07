@@ -42,6 +42,8 @@ jobs:
           path: nsd
           ref: refs/tags/${{ github.event.inputs.nsd_tag || env.nsd_tag }}
 
+      - uses: actions/checkout@v4
+
       - name: Extract OS Flavor and Version
         id: extract-os
         run: |
@@ -77,10 +79,7 @@ jobs:
               fi
             fi
 
-            ls /github/workspace
-            export
             cp debian nsd/
-
           extra-build-deps: devscripts git dpkg-cross
           before-build-hook: "dch --local ~${{ env.version }} 'GitHub build for ${{ matrix.os-version }}'"
           buildpackage-opts: --build=binary --no-sign -d
