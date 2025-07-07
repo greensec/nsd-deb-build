@@ -10,6 +10,10 @@ on:
         default: "NSD_4_12_0_REL"
         required: true
 
+  push:
+    branches:
+      - main
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -67,6 +71,9 @@ jobs:
                 cat /etc/apt/sources.list  /etc/apt/sources.list.d/ubuntu-arm.list
               fi
             fi
+
+            ls /github/workspace
+            export
             cp debian nsd/
 
           extra-build-deps: devscripts git dpkg-cross
