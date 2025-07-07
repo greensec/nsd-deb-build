@@ -80,8 +80,9 @@ jobs:
             fi
             if [ "$os_version" = "debian:bullseye" ]; then
               # update autoconf
-              wget http://ftp.us.debian.org/debian/pool/main/a/autoconf/autoconf_2.71-3_all.deb
-              dpkg -i autoconf_2.71-3_all.deb
+              apt install wget -y
+              wget -O /tmp/autoconf_2.71-3_all.deb http://ftp.us.debian.org/debian/pool/main/a/autoconf/autoconf_2.71-3_all.deb
+              dpkg -i /tmp/autoconf_2.71-3_all.deb
             fi
 
             cp -vr /github/workspace/build-debian/debian /github/workspace/
