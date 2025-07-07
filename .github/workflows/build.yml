@@ -78,7 +78,7 @@ jobs:
                 cat /etc/apt/sources.list  /etc/apt/sources.list.d/ubuntu-arm.list
               fi
             fi
-            if [ "$flavor" = "debian" ] && [ "$os_version" = "bullseye" ]; then
+            if [ "$os_version" = "debian:bullseye" ]; then
               # update autoconf
               wget http://ftp.us.debian.org/debian/pool/main/a/autoconf/autoconf_2.71-3_all.deb
               dpkg -i autoconf_2.71-3_all.deb
