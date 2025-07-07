@@ -39,10 +39,11 @@ jobs:
       - uses: actions/checkout@v4
         with:
           repository: NLnetLabs/nsd
-          path: nsd
           ref: refs/tags/${{ github.event.inputs.nsd_tag || env.nsd_tag }}
 
       - uses: actions/checkout@v4
+        with:
+          path: build-debian
 
       - name: Extract OS Flavor and Version
         id: extract-os
@@ -79,11 +80,10 @@ jobs:
               fi
             fi
 
-            cp -vr /github/workspace/debian /github/workspace/nsd/
+            cp -vr /github/workspace/build-debian/debian /github/workspace/
           extra-build-deps: devscripts git dpkg-cross
           before-build-hook: "dch --local ~${{ env.version }} 'GitHub build for ${{ matrix.os-version }}'"
           buildpackage-opts: --build=binary --no-sign -d
-          source-dir: /github/workspace/nsd/
       - name: Upload deb files
         uses: actions/upload-artifact@v4
         with:
