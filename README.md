@@ -1,10 +1,10 @@
 # NSD Debian Packages
 
-This repository contains the packaging configuration for building Debian packages of NSD (Name Server Daemon). NSD is an authoritative DNS name server with a focus on speed, security, and reliability.
+This repository contains the packaging configuration for automatically building Debian packages of [NSD](https://nlnetlabs.nl/projects/nsd/) (Name Server Daemon). NSD is an authoritative DNS name server with a focus on speed, security, and reliability.
 
 ## Repository Information
 
-Pre-built packages are available at: https://greensec.github.io/nsd-deb-build/
+Pre-built packages are available at: [https://greensec.github.io/nsd-deb-build/](https://greensec.github.io/nsd-deb-build/)
 
 ## Supported Debian/Ubuntu Versions
 
@@ -40,3 +40,7 @@ apt-get update && apt-get install nsd
 ## Acknowledgements
 
 This package is based on the work of the NSD developers and the Debian DNS team.
+
+### Original NSD Project
+- [NSD Official Website](https://nlnetlabs.nl/projects/nsd/)
+- [GitHub Repository](https://github.com/NLnetLabs/nsd)
