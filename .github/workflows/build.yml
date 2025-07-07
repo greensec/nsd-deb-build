@@ -40,6 +40,7 @@ jobs:
         with:
           repository: NLnetLabs/nsd
           ref: refs/tags/${{ github.event.inputs.nsd_tag || env.nsd_tag }}
+          submodules: "recursive"
 
       - uses: actions/checkout@v4
         with:
