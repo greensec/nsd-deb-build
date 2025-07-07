@@ -22,7 +22,6 @@ jobs:
       matrix:
         os-version:
           [
-            "debian:buster",
             "debian:bullseye",
             "debian:bookworm",
             "ubuntu:noble",
@@ -129,7 +128,6 @@ jobs:
             amd64
             arm64
           repo_supported_version: |
-            buster
             bullseye
             bookworm
             noble
