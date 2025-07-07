@@ -26,7 +26,6 @@ jobs:
             "debian:bookworm",
             "ubuntu:noble",
             "ubuntu:jammy",
-            "ubuntu:focal",
           ]
         arch: ["amd64", "arm64"]
     steps:
@@ -78,6 +77,11 @@ jobs:
                 sed -i 's/^deb /deb [arch=arm64] /' /etc/apt/sources.list.d/ubuntu-arm.list
                 cat /etc/apt/sources.list  /etc/apt/sources.list.d/ubuntu-arm.list
               fi
+            fi
+            if [ "$flavor" = "debian" ] && [ "$os_version" = "bullseye" ]; then
+              # update autoconf
+              wget http://ftp.us.debian.org/debian/pool/main/a/autoconf/autoconf_2.71-3_all.deb
+              dpkg -i autoconf_2.71-3_all.deb
             fi
 
             cp -vr /github/workspace/build-debian/debian /github/workspace/
@@ -132,7 +136,6 @@ jobs:
             bookworm
             noble
             jammy
-            focal
           file: |
             *.deb
           version_by_filename: true
