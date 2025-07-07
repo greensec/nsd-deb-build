@@ -67,7 +67,7 @@ jobs:
                 cat /etc/apt/sources.list  /etc/apt/sources.list.d/ubuntu-arm.list
               fi
             fi
-            cp ${GITHUB_WORKSPACE}/debian ${GITHUB_WORKSPACE}/nsd
+            cp debian nsd/
 
           extra-build-deps: devscripts git dpkg-cross
           before-build-hook: "dch --local ~${{ env.version }} 'GitHub build for ${{ matrix.os-version }}'"
