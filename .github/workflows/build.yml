@@ -31,11 +31,16 @@ jobs:
           ]
         arch: ["amd64", "arm64"]
     steps:
+      - name: Set default NSD tag if not provided
+        if: github.event.inputs.nsd_tag == ''
+        run: |
+          echo "nsd_tag=NSD_4_12_0_REL" >> $GITHUB_ENV
+
       - uses: actions/checkout@v4
         with:
           repository: NLnetLabs/nsd
           path: nsd
-          ref: refs/tags/${{ github.event.inputs.nsd_tag }}
+          ref: refs/tags/${{ github.event.inputs.nsd_tag || env.nsd_tag }}
 
       - name: Extract OS Flavor and Version
         id: extract-os
