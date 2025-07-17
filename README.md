@@ -4,7 +4,7 @@ This repository contains the packaging configuration for automatically building 
 
 ## Repository Information
 
-Pre-built packages are available at: [https://greensec.github.io/nsd-deb-build/](https://greensec.github.io/nsd-deb-build/)
+Pre-built packages are available at: [https://greensec.github.io/nsd-debian/](https://greensec.github.io/nsd-debian/)
 
 ## Supported Debian/Ubuntu Versions
 
@@ -25,15 +25,15 @@ This repository uses GitHub Actions to automatically build packages for all supp
 
 #### Automatically via script
 ```bash
-wget -O- https://greensec.github.io/nsd-deb-build/add-repository.sh | bash
+wget -O- https://greensec.github.io/nsd-debian/add-repository.sh | bash
 apt-get install nsd
 ```
 
 #### Manually
 ```bash
 apt-get install wget lsb-release ca-certificates
-wget -O /usr/share/keyrings/greensec.github.io-nsd-deb-build.key https://greensec.github.io/nsd-deb-build/public.key
-echo "deb [signed-by=/usr/share/keyrings/greensec.github.io-nsd-deb-build.key] https://greensec.github.io/nsd-deb-build/repo $(lsb_release -sc) main" > /etc/apt/sources.list.d/nsd-deb-build.list
+wget -O /usr/share/keyrings/greensec.github.io-nsd-debian.key https://greensec.github.io/nsd-debian/public.key
+echo "deb [signed-by=/usr/share/keyrings/greensec.github.io-nsd-debian.key] https://greensec.github.io/nsd-debian/repo $(lsb_release -sc) main" > /etc/apt/sources.list.d/nsd-debian.list
 apt-get update && apt-get install nsd
 ```
 
