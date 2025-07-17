@@ -43,9 +43,10 @@ jobs:
         id: extract-os
         run: |
           os_version="${{ matrix.os-version }}"
+          nsd_version=$(echo ${{ github.event.inputs.nsd_tag || env.nsd_tag }} | sed -E 's/^NSD_([0-9]+)_([0-9]+)_([0-9]+)_REL/\1.\2.\3/')
           echo "flavor=${os_version%%:*}" >> $GITHUB_ENV
           echo "debian_release=${os_version##*:}" >> $GITHUB_ENV
-          echo "valkey_tag=${{ github.event.inputs.nsd_tag || env.nsd_tag }}" >> $GITHUB_ENV
+          echo "nsd_version=$nsd_version" >> $GITHUB_ENV
 
       - uses: jtdor/build-deb-action@v1
         env:
@@ -101,7 +102,7 @@ jobs:
 
             cp -vr /github/workspace/build-debian/debian /github/workspace/
           extra-build-deps: "devscripts git dpkg-cross"
-          before-build-hook: "DEBEMAIL='GitHub Actions <github-actions@users.noreply.github.com>' dch -v ${{ env.nsd_tag }}~${{ env.debian_release }} 'GitHub build for ${{ matrix.os-version }}'"
+          before-build-hook: "DEBEMAIL='GitHub Actions <github-actions@users.noreply.github.com>' dch -v ${{ env.nsd_version }}~${{ env.debian_release }} 'GitHub build for ${{ matrix.os-version }}'"
           buildpackage-opts: --build=binary --no-sign -d
       - name: Upload deb files
         uses: actions/upload-artifact@v4
