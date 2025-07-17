@@ -2,7 +2,7 @@ Codename: bookworm
 Date: Thu, 17 Jul 2025 21:49:11 UTC
 Architectures: amd64 arm64
 Components: main
-Description: greensec/nsd-deb-build
+Description: greensec/nsd-debian
 MD5Sum:
  e0ca94fa9428a4ab93b908057588576a 980 main/binary-amd64/Packages
  cae50031235efc68924e767cc92d76f9 642 main/binary-amd64/Packages.gz

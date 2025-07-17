@@ -5,7 +5,7 @@ Codename: buster
 Date: Thu, 17 Jul 2025 21:49:11 UTC
 Architectures: amd64 arm64
 Components: main
-Description: greensec/nsd-deb-build
+Description: greensec/nsd-debian
 MD5Sum:
  6fc70e2bb891a3bec3c3ad45eaaa7ac9 978 main/binary-amd64/Packages
  f4b76af183d6b8a777b05b00aae2a44a 640 main/binary-amd64/Packages.gz

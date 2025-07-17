@@ -2,7 +2,7 @@ Codename: jammy
 Date: Thu, 17 Jul 2025 21:49:11 UTC
 Architectures: amd64 arm64
 Components: main
-Description: greensec/nsd-deb-build
+Description: greensec/nsd-debian
 MD5Sum:
  150e62db0d50ab8a896ce28cc5ca1bf7 982 main/binary-amd64/Packages
  1f8f3e9a66f8623ba62e272f68cbbe44 651 main/binary-amd64/Packages.gz

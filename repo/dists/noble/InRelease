@@ -5,7 +5,7 @@ Codename: noble
 Date: Thu, 17 Jul 2025 21:49:11 UTC
 Architectures: amd64 arm64
 Components: main
-Description: greensec/nsd-deb-build
+Description: greensec/nsd-debian
 MD5Sum:
  ec35a1cefb89a419a89c00cd7633e690 980 main/binary-amd64/Packages
  b07bfaf7f27ebd56ac0d12a2e93b40e2 641 main/binary-amd64/Packages.gz
