@@ -5,11 +5,6 @@ permissions:
 
 # Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the master branch
-  create:
-    tags:
-      - "v*"
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
     inputs:
@@ -34,11 +29,6 @@ jobs:
           ]
         arch: ["amd64", "arm64"]
     steps:
-      - name: Set default NSD tag if not provided
-        if: github.event.inputs.nsd_tag == ''
-        run: |
-          echo "nsd_tag=NSD_4_12_0_REL" >> $GITHUB_ENV
-
       - uses: actions/checkout@v4
         with:
           repository: NLnetLabs/nsd
@@ -54,7 +44,8 @@ jobs:
         run: |
           os_version="${{ matrix.os-version }}"
           echo "flavor=${os_version%%:*}" >> $GITHUB_ENV
-          echo "version=${os_version##*:}" >> $GITHUB_ENV
+          echo "debian_release=${os_version##*:}" >> $GITHUB_ENV
+          echo "valkey_tag=${{ github.event.inputs.nsd_tag || env.nsd_tag }}" >> $GITHUB_ENV
 
       - uses: jtdor/build-deb-action@v1
         env:
@@ -110,12 +101,12 @@ jobs:
 
             cp -vr /github/workspace/build-debian/debian /github/workspace/
           extra-build-deps: "devscripts git dpkg-cross"
-          before-build-hook: "dch --local ~${{ env.version }} 'GitHub build for ${{ matrix.os-version }}'"
+          before-build-hook: "DEBEMAIL='GitHub Actions <github-actions@users.noreply.github.com>' dch -v ${{ env.nsd_tag }}~${{ env.debian_release }} 'GitHub build for ${{ matrix.os-version }}'"
           buildpackage-opts: --build=binary --no-sign -d
       - name: Upload deb files
         uses: actions/upload-artifact@v4
         with:
-          name: "packages-${{ env.version }}-${{ matrix.arch }}"
+          name: "packages-${{ env.debian_release }}-${{ matrix.arch }}"
           path: ./debian/artifacts/*
 
   merge-artefacts:
