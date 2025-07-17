@@ -1,0 +1,45 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Codename: bullseye
+Date: Thu, 17 Jul 2025 22:18:21 UTC
+Architectures: amd64 arm64
+Components: main
+Description: greensec/nsd-debian
+MD5Sum:
+ 361fa6cb6c5e07bff8ec90068dccf5d0 976 main/binary-amd64/Packages
+ e21aa12c2e06e2e728d83b668bb9cc4c 642 main/binary-amd64/Packages.gz
+ 2f25e929ec64097ef8cacfca0992b782 69 main/binary-amd64/Release
+ 29b2e906d360d2ae136387c72f8b81a8 976 main/binary-arm64/Packages
+ c5d34d289152f00b4f9f1f9575b47dfe 639 main/binary-arm64/Packages.gz
+ dc75cfc574646266c448ab773621e98b 69 main/binary-arm64/Release
+SHA1:
+ 4641f73a6c1e8330d24a11298a3eb8e895457eb3 976 main/binary-amd64/Packages
+ c36458af8ae6ea159fd2c984a0cc3104b351c37f 642 main/binary-amd64/Packages.gz
+ a3d0af7e62c30bd44a2d92211f595ebf04a049cc 69 main/binary-amd64/Release
+ 6391bc960018ab9ecd316100e94ba4d988f27e2b 976 main/binary-arm64/Packages
+ ddd0fab268696288e07b93da6dbe1fd26309b811 639 main/binary-arm64/Packages.gz
+ c49af0ec80ef10498b4ae924a2186aefb99f371b 69 main/binary-arm64/Release
+SHA256:
+ 04967f9e0ce7cb985da2931c360047a378f94a34c38461563d46780780b0eaed 976 main/binary-amd64/Packages
+ a14e2c0bf44b276c65da139cffcbc70abeea6a5fb3c88454dd36cc251e1282bd 642 main/binary-amd64/Packages.gz
+ 02024288d78a7f2895b840f894d61ed9862e4cd5f2705637ca98ab44e094eb1e 69 main/binary-amd64/Release
+ 1d8fafe8cdf10becf8f4f56f0cd8cc22e1ce8d23ed3cf333f59e3ee6ce3bb8b1 976 main/binary-arm64/Packages
+ 4698d60a16e9ab83cfc9f3fc084a821371f8883037d5af17c082e7432ed1a5b8 639 main/binary-arm64/Packages.gz
+ cb760f016cdafb488ed3967ca78f33e585a4f4bf86d5d2df6cbfe74e9ef8ac5b 69 main/binary-arm64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEh9MiQaRrLJmxKB6AvrUP1Du1TQcFAmh5dq0ACgkQvrUP1Du1
+TQc2tQ//XIZE8IqNGLYutA5rmZZ3WWNoXfCyL4BS1N50HhuJtQ5CNOQxB7laetQR
+Rj4pMJaE5fQKcnP2DLRLLULNWKSxx8gbOCERzZTBgWvmWBU2GhnnYSQ//ZH0+KH2
+Q3FHI+7v0+3XQzYsMAgfsOFtAHvG3Y8HsLHmreAwSsA4HStR1HwytiW0xuR5URER
+OFrK+ImfUD8/ipKFFd98rz1NQbzd9KANCXXABFXBN5yAIMp1g3/r3NoIuKYNtdYj
+q/CGCs41d/jfNvcyFMPhljCcUFHjB8S0rt3rPJhOtxN37WBdyFayZEa49NeHiTC/
+iV7U9gd3N4IuvWpcQlkYY/P0mKOsfjyd0lo+VpwmegO1CAIKXHc+zgXwlx4de1bW
+EcYwIwwg+L+9J0ax9XkldwGLvw/TnBGupzwOAS1Szw+KOafSJw7ZAX3+kpe6TC23
+1tjreB1ZlIQbaEowhDxqSqCOczX16y3TTI/HCsnFS1TL7jp1q+ZoOtnmiX/IvDTc
+EH0F45dWH/O/jol//TC/OV5zfT1dLjC2O0hD3+Ock9atDhIT0EzEGk+J/wNDiBRs
+n16ge2dfr8v7rTYvkPKjCNQ2pwtYJHYdxTe21Q+o25a7AS7BFRwu6OX6OsezPRt/
+SzO5d88QPx+QSfrqwNC1FJ7NOO3EexTa8RuZBVPeGVKu8RyePw8=
+=tpvr
+-----END PGP SIGNATURE-----

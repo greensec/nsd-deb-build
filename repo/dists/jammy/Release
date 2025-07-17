@@ -1,0 +1,26 @@
+Codename: jammy
+Date: Thu, 17 Jul 2025 22:18:21 UTC
+Architectures: amd64 arm64
+Components: main
+Description: greensec/nsd-debian
+MD5Sum:
+ 0401400dc4e5b65ec0badf1ef272011c 976 main/binary-amd64/Packages
+ 11e7b047d643e53ceb9cb2fc7bb9e67e 644 main/binary-amd64/Packages.gz
+ 2f25e929ec64097ef8cacfca0992b782 69 main/binary-amd64/Release
+ 91cff61a611f9db22b06aa62fe66fddc 976 main/binary-arm64/Packages
+ 220919b493e34d96e925229561e1ff18 647 main/binary-arm64/Packages.gz
+ dc75cfc574646266c448ab773621e98b 69 main/binary-arm64/Release
+SHA1:
+ 4df029a42072c1033c9be98bb7714d278e5c14ac 976 main/binary-amd64/Packages
+ f40470144fa65e0deeb6e7f38b8eb4665dcf94d1 644 main/binary-amd64/Packages.gz
+ a3d0af7e62c30bd44a2d92211f595ebf04a049cc 69 main/binary-amd64/Release
+ 53df0e572c8c0552185d014678b5264caa594c72 976 main/binary-arm64/Packages
+ 3319c4f8e52d2ca39023ddcaa3ec228987cebc65 647 main/binary-arm64/Packages.gz
+ c49af0ec80ef10498b4ae924a2186aefb99f371b 69 main/binary-arm64/Release
+SHA256:
+ 7f5e79d9dc958d378ec4c06e90041f4b3e2c89f879528e646b53b1dd56b95df1 976 main/binary-amd64/Packages
+ 84789fca851c9bc1542cedb1e41a903270dd3ee61b4d442e9a81b4ffff3335b4 644 main/binary-amd64/Packages.gz
+ 02024288d78a7f2895b840f894d61ed9862e4cd5f2705637ca98ab44e094eb1e 69 main/binary-amd64/Release
+ c1adddaf84994bd9be06f9e51b48f7a9f6b204f423c2d030f77e1a9639532d1b 976 main/binary-arm64/Packages
+ e1c601c4863978796e8512b7febeb2b4ecdb1c722497b9a834bd2ee171681b51 647 main/binary-arm64/Packages.gz
+ cb760f016cdafb488ed3967ca78f33e585a4f4bf86d5d2df6cbfe74e9ef8ac5b 69 main/binary-arm64/Release
