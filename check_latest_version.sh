@@ -40,6 +40,7 @@ set -e
 
 remote_current_release=$(curl -sL https://api.github.com/repos/$1/releases/latest | jq -r ".tag_name")
 remote_current_release="${remote_current_release/Release\//}"
+echo "remote_current_tag=${remote_current_release}" >> $GITHUB_OUTPUT
 remote_current_release=$(echo $remote_current_release | sed -E 's/^NSD_([0-9]+)_([0-9]+)_([0-9]+)_REL/\1.\2.\3/')
 
 echo "remote_current_release=${remote_current_release}" >> $GITHUB_OUTPUT
