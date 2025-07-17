@@ -77,6 +77,11 @@ jobs:
               fi
             fi
             if [ "$os_version" = "debian:buster" ]; then
+              # override default sources
+              echo "deb http://archive.debian.org/debian buster main contrib non-free" > /etc/apt/sources.list
+              echo "deb http://archive.debian.org/debian-security buster/updates main contrib non-free" >> /etc/apt/sources.list
+              echo "deb http://archive.debian.org/debian buster-backports main contrib non-free" >> /etc/apt/sources.list
+
               # Add Buster backports for newer debhelper
               echo "deb http://archive.debian.org/debian buster-backports main" > /etc/apt/sources.list.d/buster-backports.list
               apt-get -q update
@@ -102,7 +107,7 @@ jobs:
 
             cp -vr /github/workspace/build-debian/debian /github/workspace/
           extra-build-deps: "devscripts git dpkg-cross"
-          before-build-hook: "DEBEMAIL='GitHub Actions <github-actions@users.noreply.github.com>' dch -v ${{ env.nsd_version }}~${{ env.debian_release }} 'GitHub build for ${{ matrix.os-version }}'"
+          before-build-hook: "DEBEMAIL='GitHub Actions <github-actions@users.noreply.github.com>' dch -b -v ${{ env.nsd_version }}~${{ env.debian_release }} 'GitHub build for ${{ matrix.os-version }}'"
           buildpackage-opts: --build=binary --no-sign -d
       - name: Upload deb files
         uses: actions/upload-artifact@v4
